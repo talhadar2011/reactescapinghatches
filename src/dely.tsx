@@ -7,6 +7,7 @@ export function useDelayedValue(value, delay) {
     setTimeout(() => {
       setDelayedValue(value);
     }, delay);
+    
   }, [value, delay]);
 
   return delayedValue;

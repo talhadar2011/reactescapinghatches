@@ -46,8 +46,8 @@ function Dot({ position, opacity }) {
     }} />
   );
 }
-const pos1 = usePointerPosition();
-  const pos2 = useDelayedValue(pos1, 100);
+  const pos1 = usePointerPosition();
+  const pos2 = useDelayedValue(pos1, 300);
   const pos3 = useDelayedValue(pos2, 200);
   const pos4 = useDelayedValue(pos3, 100);
   const pos5 = useDelayedValue(pos4, 50);
@@ -55,11 +55,11 @@ const pos1 = usePointerPosition();
   return (
     <>
     <Dot position={pos1} opacity={1} />
-      <Dot position={pos2} opacity={0.8} />
+      {/* <Dot position={pos2} opacity={0.8} />
       <Dot position={pos3} opacity={0.6} />
       <Dot position={pos4} opacity={0.4} />
-      <Dot position={pos5} opacity={0.2} />
-      <button onClick={handleClick}>
+      <Dot position={pos5} opacity={0.2} /> */}
+      {/* <button onClick={handleClick}>
       Click me!
     </button>
 
@@ -69,11 +69,11 @@ const pos1 = usePointerPosition();
       </button>
        <button onClick={() => setIsPlaying(!isPlaying)}>
         {isPlaying ? 'Pause' : 'Play'}
-      </button>
-      <VideoPlayer
+      </button> */}
+      {/* <VideoPlayer
         isPlaying={isPlaying}
         src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
-      />
+      /> */}
     </>
     
   );
